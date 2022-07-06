@@ -1,13 +1,15 @@
 <?php
 	// BUAT KONEKSI TANPA DATABASE
-	$connection = new mysqli('localhost', 'root', '');
+	// $connection = new mysqli('localhost', 'root', '');
 
 	// BUAT KONEKSI DENGAN DATABASE
-	if(!$connection -> connect_error){
-		echo "Koneksi berhasil";
-	}
-	else{
-		echo "Koneksi Gagal";
-	}
+	$connection = new mysqli('localhost', 'root','', 'sagu');
+	
+	// if(!$connection -> connect_error){
+	// 	echo "Koneksi berhasil";
+	// }
+	// else{
+	// 	echo "Koneksi Gagal";
+	// }
 
 ?>

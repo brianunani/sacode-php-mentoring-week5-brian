@@ -5,7 +5,7 @@
 
 	// FUNGSI BUAT DATABASE
 	
-	$sql = "CREATE DATABASE kab_jayapura";
+	$sql = "CREATE DATABASE sagu";
 	$connection -> query($sql);	
 
 ?>

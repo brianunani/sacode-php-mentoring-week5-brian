@@ -37,3 +37,38 @@ Learn MySQL in PHP
 		}
 
 	?>
+
+## CREATE TABLE
+
+	<?php
+
+		// INTEGRASI KONEKSI
+		require_once('connection.php');
+
+		// FUNGSI CREATE TABLE
+		$sql = "CREATE TABLE students(
+					id INT(11) AUTO_INCREMENT PRIMARY KEY,
+					first_name VARCHAR(30) NOT NULL,
+					last_name VARCHAR(50) NULL,
+					email VARCHAR(50) NULL
+				)";
+
+		$connection -> query($sql);
+
+	?>
+
+## INSERT DATA
+
+	<?php
+
+		//INTEGRASI KONEKSI
+		require_once('connection.php');
+
+		// FUNGSI SQL INSERT DATA
+		$sql = " INSERT INTO social_media_links(title, url) VALUES ('Youtube', 'https://www.youtube.com/channel/UCtB90R0g-_tX6saz1jZgr8g')";
+
+		//FUNGSI MENGIRIM DATA KE DATABASE
+		$connection ->query($sql);
+	?>
+
+## UPDATE DATA
